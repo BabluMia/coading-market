@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Style Script', cursive; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    position: relative;
+}
+p{
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 20px;
+    color: #a9a9a9;
+}
+h1.title{
+    margin-bottom: 20px;
+    font-family: 'Style Script', cursive;
+    color: #444444;
+    text-transform: uppercase;
+    word-spacing: 25px;
+    letter-spacing: 5px;
+    font-size: 38px;
+    text-align: center;
+}
+.btn a{
+    display: block;
+    width: 180px;
+    height: 35px;
+    border: 2px solid #fb2274;
+    color: #444444;
+    margin: 25px auto 0;
+    line-height: 34px;
+    text-align: center;
+}
+
+/* navigation bar */
+.navbar{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+}
+.logo a{
+    font-size: 32px;
+    font-family: 'Style Script', cursive; 
+    color: #fb2274;
+}
+.navbar .navbar-items ul{
+    display: flex;
+}
+.navbar .navbar-items ul li{
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+.navbar .navbar-items ul li a{
+    color: white;
+}
+.banner-img{
+    background: url("../img/p3.jpg") no-repeat center/cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-content {
+    text-align: center;
+    color: white;
+}
+.banner-content h1{
+    text-transform: uppercase;
+    line-height: 38px;
+    margin-bottom: 15px;
+}
+.banner-content h1 span{
+    color: #fb2274;
+}
+/* about */
+.about , .services , .contact , .our-team{
+    padding: 5% 10%;
+    text-align: center;
+}
+/* services */
+.services{
+    background: #f5f5f5;
+}
+.services .p{
+    margin: 0 auto;
+    text-align: center;
+}
+.diff-services{
+    display: flex;
+    margin-top: 35px;
+    justify-content: space-between;
+}
+.diff-service-item{
+    width: 30%;
+    height: auto;
+    overflow: hidden;
+
+}
+.diff-service-item:hover img{
+    transform: scale(1.1);
+    transition: .5s all ease-in-out;
+}
+.diff-service-item img{
+    width: 100%;
+    margin-bottom: 25px;
+}
+.diff-service-item h3{
+    color: #fb2274;
+    margin-bottom: 15px;
+}
+/* contact */
+.from-input{
+    margin-bottom: 15px;
+}
+.from-input input[type="text"] ,.from-input input[type="email"]{
+    width: 250px;
+    padding: 12px 20px;
+    border: 1px solid #000;
+}
+.from-input textarea{
+    width: 250px;
+    padding: 12px 20px;
+    height: 80px;
+    border: 1px solid #000;
+    resize: none;
+}
+.our-team{
+    background-color: #f5f5f5;
+}
+.team-wraper{
+    display: flex;
+    gap: 30px 0px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.team{
+    width: 30%;
+    height: auto;
+    cursor: pointer;
+    overflow: hidden;
+}
+.team img{
+    width: 100%; 
+    height: auto;
+}
+.team:hover img{
+    transform: scale(1.1);
+    transition: .4s all ease;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    background: #444444;
+    padding: 20px 0px;
+}
+.footer a{
+    color: white;
+}
